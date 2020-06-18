@@ -477,7 +477,8 @@ main(int argc, char **argv) {
 
 	/* reset DPMS values to inital ones */
 	DPMSSetTimeouts(dpy, standby, suspend, off);
-	DPMSDisable(dpy);
+	if (dpmsdisable == True)
+		DPMSDisable(dpy);
 	XSync(dpy, 0);
 
 	return 0;

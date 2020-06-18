@@ -14,6 +14,9 @@ static const int failonclear = 1;
 /* time in seconds before the monitor shuts down */
 static const int monitortime = 5;
 
+/* disable dpms after unlock */
+static const int dpmsdisable = True;
+
 /*
  * Xresources preferences to load at startup
  */
